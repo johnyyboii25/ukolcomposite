@@ -7,4 +7,8 @@
     { 
         return -Operand.Evaluate();
     }
+    public override string GetString()
+    {
+        return $"-{Operand.GetString()}";
+    }
 }

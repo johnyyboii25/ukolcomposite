@@ -7,4 +7,5 @@
 	}
 
 	public abstract double Evaluate();
+	public abstract string GetString();
 }

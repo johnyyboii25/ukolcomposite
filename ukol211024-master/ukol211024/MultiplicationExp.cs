@@ -5,4 +5,8 @@ public class MultiplicationExp : BinaryExpression
     {
         return Left.Evaluate() * Right.Evaluate();
     }
+    public override string GetString()
+    {
+        return $"({Left.GetString()} * {Right.GetString()})";
+    }
 }

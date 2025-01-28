@@ -1,4 +1,4 @@
-﻿public class BinaryExpression : IExpression
+﻿public abstract class BinaryExpression : IExpression
 {
 	protected IExpression Left;
 	protected IExpression Right;
@@ -9,4 +9,5 @@
 	}
 
 	public abstract double Evaluate();
+	public abstract string GetString();
 }

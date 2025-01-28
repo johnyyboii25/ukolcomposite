@@ -6,4 +6,8 @@ public class ExponentiationExp : BinaryExpression
     {
         return Math.Pow(Left.Evaluate(), Right.Evaluate());
     }
+    public override string GetString()
+    {
+        return $"({Left.GetString()} ^ {Right.GetString()})";
+    }
 }
